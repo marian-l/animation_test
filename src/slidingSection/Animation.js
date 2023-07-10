@@ -13,7 +13,7 @@ export default function Animation() {
 
     return (
         <div>
-            <div className="modal" style={{top: view && '5px'}}>
+            <div className="modal" style={{bottom: view && '5px'}}>
                 <p className="modal-header">THIS is a modal header</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. </p>
                 <div className="btn-box">
@@ -21,7 +21,7 @@ export default function Animation() {
                 </div>
             </div>
             <div className="btn-box">
-                <button onClick={show}>Show</button>
+                {!view && <button onClick={show}>Show</button>}
             </div>
         </div> 
     )
