@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import './tstyles.css'
+import './slidingSection.css'
 
 export default function Animation() {
     let [view, setView] = useState(false);
@@ -17,11 +17,11 @@ export default function Animation() {
                 <p className="modal-header">THIS is a modal header</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. </p>
                 <div className="btn-box">
-                    <button onClick={hide}></button>
+                    <button onClick={hide}>Hide</button>
                 </div>
             </div>
             <div className="btn-box">
-                <button onClick={show}></button>
+                <button onClick={show}>Show</button>
             </div>
         </div> 
     )

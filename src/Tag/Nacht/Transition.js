@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import './style.css';
+import './day-n-nite.css';
 
 export default function Transition() {
     let [mode, setMode] = useState("false");
