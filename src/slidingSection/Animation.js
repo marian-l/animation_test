@@ -21,7 +21,7 @@ export default function Animation() {
                 </div>
             </div>
             <div className="btn-box">
-                {!view && <button onClick={show}>Show</button>}
+                {!view &&<button onClick={show}>Show</button>}
             </div>
         </div> 
     )

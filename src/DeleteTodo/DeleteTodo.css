@@ -1,0 +1,41 @@
+.actions {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.todo {
+  background: var(--geist-background);
+  padding: 2rem;
+/* position: relative;
+For the left property to work -> no left, right, top or bottom property is used. Only in combination with position: absolute 
+*/
+  transition: opacity 3s ease;
+/*
+  transform: translateX(0%);
+*/
+}
+
+.todo.slide-out { /* extends the todo class (Dai, SO)*/
+  position: relative; /* For the left property to work*/
+ /*
+  transform: translateX(100%);
+ */
+  opacity: 0;
+}
+
+button {
+  background: #ececec;
+  position: relative;
+  border: 0;
+  border-radius: 0.125rem;
+  padding: 1rem 2rem;
+}
+button + button {
+  margin-left: 1rem;
+  position: relative;
+}
